@@ -1,0 +1,363 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+html, body{
+	margin: 0;
+}
+
+link{
+	list-style:none;
+	text-decoration:none;
+}
+#contend {
+	background: url('http://i.imgur.com/pIiquZH.png');
+	position: absolute;
+	width: 230px;
+	height: 370px;
+	z-index: 1;
+	background-color: #D6D6D6;
+	border: 5px solid #fff1f0;
+}
+audio{
+	width:230px;
+	height:30px;
+	opacity:0.8;
+	}
+	#audio:hover{
+		opacity:0.5;
+				}
+#player {
+	position: absolute;
+	top: 340px;
+	width: 180px;
+	height: 30px;
+	opacity: 0.75;
+	z-index: 2;
+}
+#track {
+	position: absolute;
+	left: 30px;
+	top: 233px;
+	width: 181px;
+	height: 20px;
+	z-index: 2;
+	
+}
+#title_stream {
+	position: absolute;
+	left: 6px;
+	top: 351px;
+	width: 211px;
+	height: 21px;
+	z-index: 3;
+}
+#apDiv1 {
+	position: absolute;
+	left: 7px;
+	top: 235px;
+	width: 19px;
+	height: 18px;
+	z-index: 4;
+}
+#apDiv2 {
+	position: absolute;
+	left: 7px;
+	top: 6px;
+	width: 211px;
+	height: 206px;
+	z-index: 2;
+}
+
+	.play_pause {
+	position: absolute;
+	left: 10px;
+	top: 342px;
+	width: 21px;
+	height: 20px;
+	z-index: 2;
+}
+    #apDiv3 {
+	position: absolute;
+	left: 38px;
+	top: 341px;
+	width: 135px;
+	height: 14px;
+	z-index: 3;
+}
+#p{
+	opacity:0.3;
+
+	}
+#p:hover{
+	opacity: 0.6;
+}
+    .aliguin {
+	position: absolute;
+	left: 5px;
+	top: 6px;
+	width: 204px;
+	height: 28px;
+	z-index: 2;
+	/* [disabled]background: #FFF; */
+}
+
+
+
+
+		a{
+	list-style:none;
+	text-decoration:none;
+	color:#000;
+	}
+	a link{
+		list-style:none;
+	text-decoration:none;
+		}
+		link{
+			list-style:none;
+	text-decoration:none;
+			}
+#contenedor {
+	position: absolute;
+	left: 3px;
+	top: 2px;
+	width: 233px;
+	height: 350px;
+	z-index: 1;
+}
+
+
+#icono_playlist {
+	position: absolute;
+	left: 9px;
+	top: 305px;
+	width: 18px;
+	height: 18px;
+	z-index: 2;
+	/* [disabled]border-radius: 3px 0px 0px 3px; */
+	/* [disabled]border: solid 1px #000; */
+	/* [disabled]background: #FFF; */
+	cursor: pointer;
+}
+#track_title {
+	position: absolute;
+	left: 30px;
+	top: 304px;
+	width: 180px;
+	height: 20px;
+	z-index: 3;
+	border-radius: 3px;
+	/* [disabled]border: solid 1px #000; */
+	background: #FFF;
+}
+#icono_listeners {
+	position: absolute;
+	left: 8px;
+	top: 248px;
+	width: 18px;
+	height: 18px;
+	z-index: 4;
+	/* [disabled]border-radius: 3px 0px 0px 3px; */
+	/* [disabled]border: solid 1px #000; */
+	/* [disabled]background: #FFF; */
+	cursor: pointer;
+}
+#listeners {
+	position: absolute;
+	left: 29px;
+	top: 248px;
+	width: 36px;
+	height: 20px;
+	z-index: 5;
+	border-radius: 3px 3px 3px 3px;
+	/* [disabled]border: solid 1px #000; */
+	background: #FFF;
+}
+#streaming_title {
+	position: absolute;
+	left: 30px;
+	top: 275px;
+	width: 180px;
+	height: 20px;
+	z-index: 6;
+	border-radius: 3px;
+	/* [disabled]border: solid 1px #000; */
+	background: #FFF;
+}
+#icono_stream_list {
+	position: absolute;
+	left: 7px;
+	top: 275px;
+	width: 20px;
+	height: 20px;
+	z-index: 7;
+	cursor: pointer;
+}
+
+#streaming_title, #listeners, #track_title, #status_server , #kB{
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC44MiIvPgogICAgPHN0b3Agb2Zmc2V0PSI5OCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC44MSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuODEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.82) 90%, rgba(255,255,255,0.81) 98%, rgba(255,255,255,0.81) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(90%,rgba(255,255,255,0.82)), color-stop(98%,rgba(255,255,255,0.81)), color-stop(100%,rgba(255,255,255,0.81))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.82) 90%,rgba(255,255,255,0.81) 98%,rgba(255,255,255,0.81) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0.82) 90%,rgba(255,255,255,0.81) 98%,rgba(255,255,255,0.81) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.82) 90%,rgba(255,255,255,0.81) 98%,rgba(255,255,255,0.81) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.82) 90%,rgba(255,255,255,0.81) 98%,rgba(255,255,255,0.81) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1ffffff', endColorstr='#cfffffff',GradientType=0 ); /* IE6-8 */
+
+	}
+	#status_server {
+	position: absolute;
+	left: 415px;
+	top: 7px;
+	width: 45px;
+	height: 19px;
+	z-index: 8;
+	border-radius: 3px;
+	border: solid 1px #000;
+}
+    #status_icono {
+	position: absolute;
+	left: 385px;
+	top: 7px;
+	width: 20px;
+	height: 20px;
+	z-index: 9;
+}
+#streamlinkitunes {
+	position: absolute;
+	left: 8px;
+	top: 208px;
+	width: 32px;
+	height: 32px;
+	z-index: 9;
+}
+#streamlinkvlc {
+	position: absolute;
+	left: 45px;
+	top: 208px;
+	width: 32px;
+	height: 32px;
+	z-index: 9;
+}
+    #kB {
+	position: absolute;
+	left: 103px;
+	top: 249px;
+	width: 48px;
+	height: 18px;
+	z-index: 10;
+	padding: 1px;
+	border-radius: 3px;
+}
+    #trasmitiendo {
+	position: absolute;
+	left: 79px;
+	top: 248px;
+	width: 20px;
+	height: 20px;
+	z-index: 11;
+	cursor: pointer;
+}
+
+/*  DISENO REPRODUCTOR - OTAKUDESHO RADIO BY: JUAN MALARIN */
+
+.ui-slider-horizontal {
+  margin-top: 1px;
+  background: #000 !important;
+  border: none !important;
+  height: 8px !important;
+}
+ 
+.ui-slider-range-min {
+  background: url("http://i.imgur.com/pIiquZH.png") repeat-x !important;
+  border: none;
+  border-radius: 0;
+}
+ 
+.ui-slider-handle {
+  background: url("../images/handle.png") !important;
+  border: none !important;
+  width: 25px !important;
+  height: 25px !important;
+  outline: none;
+  top: -9px !important;
+}
+
+.radio{
+	width: 220px;
+	height: 20px;
+	border-top: 1px solid #979797;	
+	box-shadow: 0px -1px 0px #000;
+	background: #6a6a6a;
+	padding: 5px;
+}
+
+.radio .play{
+	background: url('../images/play.png') no-repeat;
+	width: 20px;
+	height:20px;
+	float: left;
+	cursor: pointer;
+}
+
+.radio .play:hover{
+	background: url('../images/play_hover.png') no-repeat;
+}
+
+.radio .pause{
+	background: url('../images/pause.png') no-repeat;
+	width: 20px;
+	height:20px;
+	float: left;
+	cursor: pointer;
+}
+
+.radio .pause:hover{
+	background: url('../images/pause_hover.png') no-repeat;
+}
+
+.radio .spacer{
+	width: 1px;
+	height: 31px;
+	overflow: hidden;
+	float: left;
+	border-left: 1px solid #000;
+	background: #979797;
+	margin: -6px 5px -5px 5px;
+
+}
+
+.radio .volume_image{
+	width: 20px;
+	height: 20px;
+	background: url('../images/volumen.png') no-repeat;
+	margin-right: 8px;
+	float: left;
+}
+
+.radio .volume_container{
+	width: 150px;
+	float: left;
+	margin-top: 4px;
+
+}
+
+
+.radio .volume_bg{
+	width: 150px;
+	height: 8px;
+	float: left;
+	border: 1px solid #000;
+	border-radius: 4px;
+	background: url("../images/bg_back.png") no-repeat #000 !important;
+}
+
+
+.radio #volume{
+	width: 134px;
+	margin-left: 5px;
+}
