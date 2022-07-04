@@ -1,2 +1,2 @@
 # radio
-Códigos CSS. JS y SCRIPTS de la radio Otakudesho!
+Códigos CSS. JS y SCRIPTS de la radio Jkanime!
